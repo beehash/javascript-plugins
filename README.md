@@ -7,7 +7,7 @@ there is some javascript plugins created by me;
 
 options:{
 
- type: [alert | comfirm]} string
+ type: [alert | comfirm] string
  
  popText: 弹窗文字 string
  
