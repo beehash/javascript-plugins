@@ -1,7 +1,7 @@
 # javascript-plugins
 there is some javascript plugins created by me;
 
-# pop
+# pops
 
 # 弹出一个消息提示框
 
