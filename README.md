@@ -28,3 +28,16 @@ options: {
   method: [get | post | put | head | delete | head | connect],
   url: url
 }
+
+# 使用方法
+```
+XHR.axios({
+          method: method,
+          url: url,
+        }).then(function (data) {
+          console.log(data.success);
+        }, function(data) {
+          console.log(2333333, data);
+        });
+	    }
+```
