@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>异步请求</title>
+	</head>
+	<body>
+	  <div>合伙人发我而额外去科技馆和如同一条有五个认同我也没人更换空调管护理人文</div>
+	  <script src="ajax.js"> </script>
+	  <script>
+	    window.onload = function () {
+	      XHR.axios({
+          method: 'get',
+          url: '/kxtx-service-rule-guizemanager/ruleCatalog/getMenuList',
+        }).then(function (data) {
+          console.log(data.success);
+        }, function(data) {
+          console.log(2333333, data);
+        });
+	    }
+	  </script>
+	</body>
+</html>
