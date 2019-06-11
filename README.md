@@ -19,3 +19,12 @@ options:{
  
 # 关闭弹窗：
  popup.close()
+
+
+# myxhr
+原生javascript写的异步请求封装，实现类似axios的功能。
+
+options: {
+  method: [get | post | put | head | delete | head | connect],
+  url: url
+}
