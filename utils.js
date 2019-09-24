@@ -257,6 +257,17 @@
     }
     return query;
   }
+  var stringToObj = function (str, obj) {
+    str = str.split('.');
+    if (str.length < 2) {
+      return str;
+    }
+    var result = obj;
+    for(var i=1,l=str.length; i<l; i++) {
+      result = result[str[i]];
+    }
+    return result;
+  }
   
   return {
     setCookie: setCookie,
