@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #root{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    h1.header{
+      width: 100%;
+      height: 28px;
+      line-height: 28px;
+      color: #ffffff;
+      background-color: #000000;
+    }
+    h2.title{
+      width: 90%;
+      font-size: 30px;
+      font-weight: 800;
+      margin-left: 10%;
+      margin: 32px;
+    }
+    li{
+      list-style-type: none;
+    }
+    .test-list{
+      display: flex;
+      width: 100%;
+    }
+    .test-list .list-item{
+      width: 300px;
+      margin-right: 8px;
+    }
+    .test-list .list-item .item-desc{
+      display: inline-block;
+      width: 100%;
+      text-align: justify;
+      color: #999999;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="header"></h1>
+  <div id="root">
+    <h2 class="title" x-bind="rediu"></h2>
+    <ul class="test-list">
+      <li x-for="item in slicelists" class="list-item"><img x-src="{{item.src}}" width="100%"/><span class="item-desc">{{item.title}}</span></li>
+    </ul>
+  </div>
+  <script src="https://r.r10s.jp/com/js/d/common/jquery-1.4.2.min.js"></script>
+  <script src="component.js"></script>
+</body>
+</html>
