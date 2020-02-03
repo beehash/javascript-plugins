@@ -7,6 +7,7 @@
     document.cookie = key + '=' + value + ';expires=' + exp.toGMTString()+';path=/;domain=.rakuten.co.jp';
   }
   var getCookie = function(key) {
+    var c_start, c_end;
     if (document.cookie.length>0){
       c_start=document.cookie.indexOf(key + '=');
       if (c_start!=-1){ 
