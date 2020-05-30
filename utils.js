@@ -203,7 +203,22 @@
   var isIdCard = function () {
     return /^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/.test(str);
   }
-  
+  function tipMsg (msg) {
+    var msgTip = document.getElementById('msg-tip');
+    if(!msgTip) {
+      msgTip = document.createElement('span');
+      msgTip.id='msg-tip';
+      msgTip.className='msg-tip';
+      msgTip.innerHTML = msg;
+      document.body.appendChild(msgTip);
+    } else {
+      msgTip.innerHTML = msg;
+    }
+    msgTip.style.display = 'inline';
+    setTimeout(function () {
+      msgTip.style.display = 'none';
+    }, 1500);
+  }
   // 数字金额转中文汉字
   var digitUppercase = function (n) {
     var fraction = ['角', '分'];
