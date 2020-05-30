@@ -203,12 +203,12 @@
   var isIdCard = function () {
     return /^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/.test(str);
   }
-  function tipMsg (msg) {
+    function tipMsg (msg) {
     var msgTip = document.getElementById('msg-tip');
     if(!msgTip) {
       msgTip = document.createElement('span');
       msgTip.id='msg-tip';
-      msgTip.className='msg-tip';
+      msgTip.style='position: fixed;top: 20%;left: 55%;padding: 8px 24px;color: #ffffff;font-size: 14px;background-color: rgba(0,0,0,0.5);border-radius: 6px;z-index: 33;';     
       msgTip.innerHTML = msg;
       document.body.appendChild(msgTip);
     } else {
